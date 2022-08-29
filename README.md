@@ -10,6 +10,11 @@ The API works with a list of currencies used world wide:
 
 
 ## **✔️ Run application**
+
+**Swagger API**
+[fastapi swagger](https://bee-currency.herokuapp.com/docs) <br>
+*! in debug mode*
+
 **curl comands to access API**
 
 get list of all supported currencies: <br>
