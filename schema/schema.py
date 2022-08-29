@@ -44,3 +44,5 @@ class Convert(BaseModel):
 # jwt auth
 class Settings(BaseModel):
       authjwt_secret_key : str = config('secret')
+      authjwt_access_token_expires: int = 600 # 10 minutes
+      authjwt_refresh_token_expires: int = 600 # 10 minutes
