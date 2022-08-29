@@ -22,7 +22,16 @@ get list of all supported currencies: <br>
 *! does not require authentication*
 
 signin a new user: <br>
-`curl -X 'POST' 'https://bee-currency.herokuapp.com/auth/sign-in' -H 'accept: application/json' -H 'Content-Type: application/json' -d '{ "username": "<string>", "email": "<user@example.com>", "password": "<string>", "confirm password": "<string>"}'` <br>
+`curl -X 'POST' \
+  'https://bee-currency.herokuapp.com/auth/sign-in' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "username": "string",
+  "email": "user@example.com",
+  "password1": "string",
+  "password2": "string"
+}'` <br>
 *! does not require authrntication*
 
 user login: <br>
