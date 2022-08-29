@@ -35,7 +35,7 @@ signin a new user: <br>
 *! does not require authrntication*
 
 user login: <br>
-`curl -X 'POST' 'https://bee-currency.herokuapp.com/auth/log-in' -H 'accept: application/json' -H 'Content-Type: application/json' -d '{ "email": "<user@example.com>","password": "<string>"}'`<br>
+    `curl -X 'POST' 'https://bee-currency.herokuapp.com/auth/log-in' -H 'accept: application/json' -H 'Content-Type: application/json' -d '{ "email": "<user@example.com>","password": "<string>"}'`<br>
 *! does not require authentication*
 
 get refresh token: <br>
