@@ -13,7 +13,7 @@ ___
 ## **✔️ Run application**
 
 **Swagger API** <br>
-[fastapi swagger](https://bee-currency.herokuapp.com/docs) <br>
+[fastapi swagger](https://bee-currency.herokuapp.com/redoc) <br>
 *! in debug mode*
 
 ___
