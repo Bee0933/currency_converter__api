@@ -52,7 +52,7 @@ ___
       "email": "user@example.com",
       "password1": "string",
       "password2": "string"
-    }'
+      }'
 *! does not require authentication*
   <br>
 
@@ -72,7 +72,7 @@ ___
       -d '{ 
       "email": "<user@example.com>",
       "password": "<string>"
-    }' 
+      }' 
 
 *! does not require authentication*
 
@@ -115,7 +115,7 @@ ___
       "from_currency": "<EUR>", 
       "to_currency": "<INR>", 
       "amount": 0 
-    }' 
+      }' 
 
 *! requires authentication which lasts for 10mins*
 
