@@ -145,7 +145,7 @@ ___
     output:
 
     {
-      "history data for prince": [
+      "history data for user": [
         {
           "date": "2022-08-29T14:47:31.433058",
           "price_date": "29/08/2022",
