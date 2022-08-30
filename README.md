@@ -28,6 +28,17 @@ ___
 
 *! does not require authentication*
 
+    output:
+
+    { "available currencies": [
+      "EUR",
+      "JPY",
+      "BGN",
+      "CZK",
+      "DKK", 
+       ...
+    }
+
 <br>
 
 **signin a new user:** 
@@ -42,8 +53,14 @@ ___
       "password1": "string",
       "password2": "string"
     }'
-
 *! does not require authentication*
+  <br>
+
+    output :
+
+    { " message : "user registered" }
+
+
 
 
 **user login:** 
@@ -59,7 +76,16 @@ ___
 
 *! does not require authentication*
 
+    output:
+
+    {
+      "access token": "xxxxxxxxxxxx",
+      "refresh token": "xxxxxxxxxxxx"
+    }
+
 <br>
+
+
 
 **get refresh token:** 
 
@@ -69,6 +95,12 @@ ___
       -H 'Authorization: Bearer <Token>
 
 *! requires authentication which lasts for 10mins*
+
+    output:
+
+    {
+      "access token": "xxxxxxxxxxxxxxxxxxx"
+    }
 
 <br>
 
@@ -80,12 +112,24 @@ ___
       -H 'Content-Type: application/json' \
       -H 'Authorization: Bearer <Token> \
       -d '{ 
-      "from_currency": "<USD>", 
-      "to_currency": "<EUR>", 
+      "from_currency": "<EUR>", 
+      "to_currency": "<INR>", 
       "amount": 0 
     }' 
 
 *! requires authentication which lasts for 10mins*
+
+    output:
+
+    {
+      "results": {
+        "price_date": "29/08/2022",
+        "from_currency": "EUR",
+        "to_currency": "INR",
+        "exchange_rate": 79.9025,
+        "converted_value": 3196.1
+      }
+    }
 
 <br>
 
@@ -97,6 +141,37 @@ ___
       -H 'Authorization: Bearer <Token>
 
 *! requires authentication which lasts for 10mins*
+
+    output:
+
+    {
+      "history data for prince": [
+        {
+          "date": "2022-08-29T14:47:31.433058",
+          "price_date": "29/08/2022",
+          "from_currency": "EUR",
+          "to_currency": "INR",
+          "exchange_rate": "79.9025",
+          "converted_value": "3196.1"
+        },
+        {
+          "date": "2022-08-29T14:47:19.603427",
+          "price_date": "29/08/2022",
+          "from_currency": "USD",
+          "to_currency": "INR",
+          "exchange_rate": "79.8466",
+          "converted_value": "1596932.1475"
+        },
+        {
+          "date": "2022-08-29T14:47:05.760249",
+          "price_date": "29/08/2022",
+          "from_currency": "USD",
+          "to_currency": "PLN",
+          "exchange_rate": "4.7452",
+          "converted_value": "94903.5675"
+        }
+      ]
+    }
 
 <br>
 
