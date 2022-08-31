@@ -92,7 +92,7 @@ ___
     curl -X 'GET' \
       'https://bee-currency.herokuapp.com/auth/refresh' \
       -H 'accept: application/json' \
-      -H 'Authorization: Bearer <Token>
+      -H 'Authorization: Bearer <Token>'
 
 *! requires authentication which lasts for 10mins*
 
@@ -110,7 +110,7 @@ ___
       'https://bee-currency.herokuapp.com/convert/convert' \
       -H 'accept: application/json' \
       -H 'Content-Type: application/json' \
-      -H 'Authorization: Bearer <Token> \
+      -H 'Authorization: Bearer <Token>' \
       -d '{ 
       "from_currency": "<EUR>", 
       "to_currency": "<INR>", 
@@ -138,7 +138,7 @@ ___
     curl -X 'GET' \
       'https://bee-currency.herokuapp.com/convert/history' \
       -H 'accept: application/json' \
-      -H 'Authorization: Bearer <Token>
+      -H 'Authorization: Bearer <Token>'
 
 *! requires authentication which lasts for 10mins*
 
